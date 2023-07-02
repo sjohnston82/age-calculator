@@ -15,7 +15,7 @@ const AgeOutputs = () => {
         >
           {years ?? "--"}
         </p>{" "}
-        <p className="">&#160;years</p>
+        <p className="">&#160;{years === 1 ? "year" : "years"}</p>
       </div>
       <div className="flex text-5xl lg:text-8xl">
         <p
@@ -25,7 +25,7 @@ const AgeOutputs = () => {
         >
           {months ?? "--"}
         </p>{" "}
-        <p className="">&#160;months</p>
+        <p className="">&#160;{months === 1 ? " month" : "months"}</p>
       </div>
       <div className="flex text-5xl lg:text-8xl ">
         <p
@@ -35,7 +35,7 @@ const AgeOutputs = () => {
         >
           {days ?? "--"}
         </p>{" "}
-        <p className="">&#160;days</p>
+        <p className="">&#160;{days === 1 ? "day" : "days"}</p>
       </div>
     </div>
   );
