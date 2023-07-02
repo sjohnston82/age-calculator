@@ -17,14 +17,14 @@ const DownArrow = ({ handleSubmit, onSubmit }) => {
           src={IconArrow}
           alt="icon arrow"
           className={cn(
-            "h-16 w-16 left-0 right-0 m-auto rounded-full p-4 absolute cursor-pointer bg-indigo-600",
+            "h-16 w-16 left-0 right-0 m-auto rounded-full p-4 absolute cursor-pointer bg-indigo-600 lg:h-24 lg:w-24 lg:p-6 lg:m-0 lg:left-auto lg:end-0",
             { "bg-black": isClicked }
           )}
           onClick={handleSubmit(onSubmit)}
           onMouseDown={() => setIsClicked(true)}
           onMouseUp={() => setIsClicked(false)}
         />
-        <div className="h-8 border-b-2 border-gray-100"></div>
+        <div className="h-8 border-b-2 border-gray-200 lg:h-12"></div>
       </div>
     </div>
   );

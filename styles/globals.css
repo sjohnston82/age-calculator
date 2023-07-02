@@ -17,4 +17,8 @@ body {
     font-family: "PoppinsBold";
     src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "PoppinsExtraBoldItalic";
+    src: url("../assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  }
 }
